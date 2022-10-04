@@ -1,0 +1,182 @@
+.second-page-heading {
+  background-image: url(../images/ph_4.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 260px 0px 190px 0px;
+  text-align: center;
+}
+
+.second-page-heading h4 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.second-page-heading h4::after {
+  position: absolute;
+  width: 100px;
+  height: 2px;
+  background-color: rgba(253, 253, 253, 0.977);
+  content: '';
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50px);
+}
+.second-page-heading h1{
+  font-size: 70px;
+  font-weight: 700;
+  color: rgba(253, 253, 253, 0.853);
+  margin-bottom: 30px;
+}
+
+.second-page-heading h3 {
+  font-size: 50px;
+  font-weight: 700;
+  color: rgba(225, 224, 224, 0.978);
+  margin-bottom: 30px;
+}
+
+.second-page-heading p {
+  padding: 0px 15%;
+  color: rgba(255, 255, 255, 0.866);
+  margin-bottom: 30px;
+}
+
+.second-page-heading .main-button a {
+  border-color: rgb(234, 234, 237);
+  color: #22b9c1;
+  background-color: rgb(245, 240, 240);
+}
+.second-page-heading .main-button1{
+  font-size: 14px;
+  color: #fff;
+  background-color: #12e0f3;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  width: 20%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-page-heading .main-button a:hover {
+  border-color: #22b3c1;
+  background-color: #22b3c1;
+  color: #fff;
+}
+
+.reservation-info {
+  margin-top: -99px;
+}
+
+.more-info .info-item {
+  background-color: #fff;
+  border-radius: 23px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.15);
+  text-align: center;
+  padding: 30px;
+}
+
+.more-info .info-item i {
+  background-color: #f0f0f0;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50px;
+  color: #22b3c1;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.more-info .info-item h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.more-info .info-item a {
+  font-size: 15px;
+  color: #27c3d1;
+  
+}
+
+.reservation-form {
+  margin: 100px 0px;
+}
+
+.reservation-form #map {
+  margin-bottom: -6px;
+}
+
+.reservation-form #reservation-form h4 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.reservation-form #reservation-form h4 em {
+  font-style: normal;
+  color: #22b3c1;
+}
+
+.reservation-form #reservation-form {
+  padding: 60px 120px;
+  background-color: #ffffff;
+  border-bottom-right-radius: 23px;
+  border-bottom-left-radius: 23px;
+}
+
+.reservation-form #reservation-form label {
+  font-size: 15px;
+  color: #7e7b7b;
+}
+
+.reservation-form #reservation-form input,
+.reservation-form #reservation-form select {
+  width: 100%;
+  height: 46px;
+  background-color: transparent;
+  border-radius: 23px;
+  border: 1px solid #e0e0e0;
+  padding: 0px 20px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.reservation-form #reservation-form input.date {
+  color: #aaa;
+}
+
+.reservation-form #reservation-form button {
+  font-size: 14px;
+  color: #fff;
+  background-color: #22b3c1;
+  border: 1px solid #22b3c1;
+  padding: 12px 30px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.reservation-form #reservation-form button:hover {
+  opacity: 0.8;
+}
