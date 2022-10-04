@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animation</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    *{
+        margin:0;
+        padding: 0;
+        
+    }
+    
+    .container{
+        height:100vh;
+        width:100%;
+        background-image: url(background1.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        
+    }
+    .runway{
+        height: 200px;
+        width:100%;
+        background-image: url(road.jpg);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .airplane{
+        width: 500px;
+        position: absolute;
+        bottom: 150px;
+        right: -200px;
+        animation: plan 4s linear infinite;
+        transform-origin: 100% 50% ;
+    }
+    @keyframes plan{
+        0%{
+            transform: translateX(0px) translateY(0px) rotate(0deg);
+        }
+        30%{
+            transform: translateX(-200px) translateY(0px) rotate(5deg);
+        }
+        100%{
+            transform: translateX(-1200px) translateY(-600px) rotate(10deg);
+        }
+    }
+    .wrapper{
+            text-align: center;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            width:100%;
+        }
+        
+        .wrapper span{
+         text-transform: uppercase;
+            display:block;
+        }
+        .text1{
+            color:#05d540;
+            font-size: 50px;
+            font-weight: 700;
+            letter-spacing: 8px;
+            margin-bottom: 20px;
+          
+            position: relative;
+            animation: text 3s 1;
+        }
+        
+        @keyframes text{
+            0%{
+                color:black;
+                margin-bottom:-40px;
+            }
+            30%{
+                letter-spacing:25px;
+                margin-bottom: -40px;
+            }
+            85%{
+                letter-spacing: 8px;
+                margin-bottom: -40px;
+            }
+        }
+</style>
+</head>
+<body>
+    
+    
+    <div class="container">
+    <div class="runway">
+    </div>
+    <img src="airplane.png" class="airplane">
+    </div>
+
+    
+    <div class="wrapper">
+        <span class="text1">Your Payment is Successully!!!</span>
+        
+
+    </div>
+</body>
+</html>
