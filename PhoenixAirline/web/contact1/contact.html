@@ -19,13 +19,7 @@
   
   
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
-<!--
 
-TemplateMo 580 Woox Travel
-
-https://templatemo.com/tm-580-woox-travel
-
--->
   </head>
 
 <body>
@@ -94,9 +88,21 @@ https://templatemo.com/tm-580-woox-travel
     <div class="container">
       <div class="row">
         
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="1100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=srilanaka%20nsbm%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:1200px;}</style><a href="https://www.embedgooglemap.net">google map html embed</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1200px;}</style></div></div>
+        <div class="mapouter"><div class="gmap_canvas"><iframe width="1100" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=srilanaka%20nsbm%20&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br>
+                
+                <style>.mapouter{position:relative;text-align:right;height:500px;width:1200px;}
+                
+                </style><a href="https://www.embedgooglemap.net">google map html embed</a>
+                
+                <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1200px;}</style></div></div>
         <div class="col-lg-12">
-          <form id="reservation-form" name="gs" method="submit" role="search" action="#">
+            
+            
+            
+            
+          <form id="reservation-form" name="gs" method="submit" role="search" action="contactActionPage.jsp">
+              
+              
             <div class="row">
               <div class="col-lg-12">
                 <h4>Make Your <em>Contact</em> Through This <em>Form</em></h4>
@@ -104,18 +110,31 @@ https://templatemo.com/tm-580-woox-travel
               <div class="col-lg-6">
                   <fieldset>
                       <label for="Name" class="form-label">Your Name</label>
+                      
+                      
+                      
                       <input type="text" name="Name" class="Name" placeholder="Ex. Thevindu Ransara" autocomplete="on" required>
+                      
+                      
+                      
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                     <label for="Number" class="form-label">Your Phone Number</label>
+                    
+                    
                     <input type="text" name="Number" class="Number" placeholder="Ex. +xxx xxx xxx" autocomplete="on" required>
+                    
+                    
+                    
                 </fieldset>
               </div>
               <div class="col-lg-6">
                   <fieldset>
                       <label for="chooseGuests" class="form-label">Number Of Guests</label>
+                      
+                      
                       <select name="Guests" class="form-select" aria-label="Default select example" id="chooseGuests" onChange="this.form.click()">
                           <option selected>ex. 2 or 3 or 4</option>
                           <option type="checkbox" name="option1" value="1">1</option>
@@ -123,17 +142,25 @@ https://templatemo.com/tm-580-woox-travel
                           <option value="3">3</option>
                           <option value="4+">4+</option>
                       </select>
+                      
+                      
                   </fieldset>
               </div>
               <div class="col-lg-6">
                 <fieldset>
                     <label for="Number" class="form-label">Check In Date</label>
+                    
+<!--                   * -->
                     <input type="date" name="date" class="date" required>
+<!--                    *-->
+
                 </fieldset>
               </div>
               <div class="col-lg-12">
                   <fieldset>
                       <label for="chooseDestination" class="form-label">Choose Your Destination</label>
+                      
+                      
                       <select name="Destination" class="form-select" aria-label="Default select example" id="chooseCategory" onChange="this.form.click()">
                           <option selected>ex. Srilanka, Colombo</option>
                           <option value="Italy, Roma">Italy, Roma</option>
@@ -141,11 +168,14 @@ https://templatemo.com/tm-580-woox-travel
                           <option value="Engaland, London">Engaland, London</option>
                           <option value="Switzerland, Lausanne">Switzerland, Lausanne</option>
                       </select>
+                      
+                      
                   </fieldset>
               </div>
               <div class="col-lg-12">                        
                   <fieldset>
-                      <button class="main-button">Send Massage</button>
+                      <input lass="main-button" type="submit" value="Send Massage" />
+<!--                      <button class="main-button">Send Massage</button>-->
                   </fieldset>
               </div>
             </div>
