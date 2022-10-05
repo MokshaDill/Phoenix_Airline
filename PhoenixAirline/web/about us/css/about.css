@@ -1,0 +1,141 @@
+.carousel-item{
+    background-position: center;
+    background-size: cover;
+    background-color: black;
+    height: 400px;
+}
+.overlay-image{
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+}
+.carousel-caption h5{
+    text-align: center;
+    font-size: 55px;
+    font-weight: bold;
+}
+.carousel-caption p{
+    font-size: 18px;
+    margin-left: 517px ;
+    text-align: justify;
+}
+.carousel-caption{
+ margin-bottom: 80px ;
+ margin-left: 300px;
+}
+.about-section{
+    background: url(../img/4a.jpg) no-repeat left;
+    background-size: 55%;
+    background-color: #fdfdfd;
+    overflow: hidden;
+}
+
+.inner-container{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 150px;
+}
+
+.inner-container h1{
+    margin-bottom: 30px;
+    font-size: 35px;
+    font-weight: 900;
+    color: rgb(38, 38, 38);
+}
+
+.text{
+    font-size: 18px;
+    color: #333232;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(46, 46, 46);
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+    color: #dcdcdcc1;
+}
+
+
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: rgb(241, 240, 240);
+}
+.about-item p{
+    margin-bottom: 10px;
+    color: rgb(195, 193, 193);
+}
+
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #e4e4e4;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+
+.about-item:hover{
+    background-color: #f99b03;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .inner-container{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .about-section{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .inner-container{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .about-section{
+        padding: 0;
+    }
+    .inner-container{
+        padding: 60px;
+    }
+}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/fontawesome/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/about.css">
+    <title>About Us</title>
+  </head>
+  <body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay-image">
+                <img class="d-block w-100 img_1" src="img/1a.jpg" alt="First slide">
+            </div>
+            
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pheonix Airline</h5>
+                <p>You Can Experience Safe And Confortable Flight With Us</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image">
+                <img class="d-block w-100 img_1" src="img/2a.jpg" alt="Second slide">
+            </div>
+           
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pheonix Airline</h5>
+                <p>You Can Experience Safe And Confortable Flight With Us</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay-image">
+                <img class="d-block w-100 img_1" src="img/a3.jpg" alt="Third slide">
+            </div>
+            
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pheonix Airline</h5>
+                <p>You Can Experience Safe And Confortable Flight With Us</p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="about-section">
+        <div class="inner-container">
+            <h1>About Us</h1>
+            <p class="text">
+                25 Years of Aviation Excellence - Phoenix Aviation first opened its doors in 1994 and now provides executive charter flights all over the world, international air ambulance service, aircraft management services, and aircraft repair and maintenance. For the past 25 years, we have provided this service, and we are prepared for many more years of greatness.
+            </p>
+          
+        </div>
+    </div>
+    <section id="ABOUT">
+      <div id="about-2">
+      <div class="content-box-lg">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                     <div class="about-item text-center">
+                      <i class="fa fa-book"></i>
+                      <h3>MISSION</h3>
+                      <hr>
+                      <p> Our mission is to support Sri Lanka's Green Vision and sustainability drive in order to create a sustainable environment, a sustainable future, and a carbon-neutral nation.</p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="about-item text-center">
+                      <i class="fa fa-globe"></i>
+                      <h3>VISION</h3>
+                      <hr>
+                      <p>Our vision is give a good and safe flight experience to all our costomers.We work hard for achieve that.We are always trying to give a good facilities to our passengers
+                      
+                      </p>
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                     <div class="about-item text-center">
+                      <i class="fa fa-pencil"></i>
+                      <h3>ACHIEVEMENTS</h3>
+                      <hr>
+                      <p> We believe in creating a more environmentally friendly and long-term future. We are dedicated to empowering our stakeholders and discerning citizens to ensure the planet's long-term..</p>
+                      </div>
+                   </div>
+               </div>
+             </div>
+          </div>
+       </div>   
+  </section>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
