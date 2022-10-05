@@ -155,16 +155,17 @@ span.price {
      <div class="container">
         <div class="row">
           <div class="col-50">
+              <form action="vaccinationActionPage.jsp" method="">
             <h3>Covid-19 Pre-Vaccination Checklist </h3>
             
                 <tbody>
                     <tr>
                         <td>First Name</td>
-                        <td><input type="text" id="fname" name="firstname" placeholder="Thevindu Ransara"></td>
+                        <td><input type="text" id="fname" name="fname" placeholder="Thevindu Ransara"></td>
                     </tr>
                      <tr>
                         <td>Last Name</td>
-                        <td><input type="text" id="email" name="email" placeholder="Rathnayaka"></td>
+                        <td><input type="text" id="email" name="lname" placeholder="Rathnayaka"></td>
                     </tr>
                     <tr>
                         <td>Address</td>
@@ -174,16 +175,16 @@ span.price {
                     <div class="col-50">
                      <tr>
                         <td>Date of Birth</td>
-                        <td> <input type="text" id="DoF" name="birth" placeholder="Month"></td>
+                        <td> <input type="text" id="DoF" name="month" placeholder="Month"></td>
                     </tr> 
                     </div>
                         <div class="col-50">
                             <td>Day</td>
-                            <td><input type="text" id="zip" name="zip" placeholder="Day"> </td> 
+                            <td><input type="text" id="zip" name="day" placeholder="Day"> </td> 
                         </div> 
                         <div class="col-50">
                            <td>Year</td>
-                           <td><input type="text" id="zip" name="zip" placeholder="Year"> </td> 
+                           <td><input type="text" id="zip" name="year" placeholder="Year"> </td> 
                         </div> 
                 </tbody>
             </table>
@@ -193,19 +194,35 @@ span.price {
               <div id="input3">
                 <span id="input-group" class="text-primary">Have you ever received a dose of COVID-19 vaccine?</span> 
                <div class="web">
-               <select>
-              <option value="">Yes</option>
-              <option value="">No</option>
-              <option value="">I Don't Know</option>
+                   <select name="option">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="dont">I Don't Know</option>
                 
             </div>
               </select>
               </div>
             </div>
           </div>
-          <input type="checkbox" checked="checked" name="shaky"> Shipping address same as billing
+          <input type="checkbox" checked="checked" name="check"> Shipping address same as billing
           <input type="submit" value="Continue to checkout" class="btn">
-       
+          
+          <%
+                            String msg= request.getParameter("msg");
+
+                                    if("valid".equals(msg)){
+                                        %>         <h1 style="color: crimson">**Successfully Updated**</h1>
+                                                   <br>
+                                        <%
+                                    }
+
+                                    if("invalid".equals(msg)){
+                            %>        <h1 style="color: crimson">Some thing Went Wrong! Try Again!!!</h1>
+                                       <br>
+                            <%
+                            }
+                        %> 
+          
       </form>
     </div>
   </div>

@@ -86,33 +86,52 @@
             
         </div>
         <div class="contactForm">
+            
+            <form action="experienceActionPage.jsp" method="">
+                
+                
+                   <%
+                        String msg= request.getParameter("msg");
+
+                             if("valid".equals(msg)){
+                        %>         <h1>Successfully Updated</h1>
+                        <%
+                             }
+
+                             if("invalid".equals(msg)){
+                     %>        <h1>Some thing Went Wrong! Try Again !</h1>
+                     <%
+                     }
+                        %>   
+                
+            
             <h2 style="font-weight: 600;">Give US Your Feedback</h2>
             <div class="formBox">
              <div class="inputBox w50">
-                <input type="text" name="" required>
+                <input type="text" name="fname" required>
                 <span>First Name</span>
              </div>
              <div class="inputBox w50">
-                <input type="text" name="" required>
+                <input type="text" name="lname" required>
                 <span>Last Name</span>
              </div>
              <div class="inputBox w50">
-                <input type="text" name="" required>
+                <input type="text" name="email" required>
                 <span>Email</span>
              </div>
              <div class="inputBox w50">
-                <input type="text" name="" required>
+                <input type="text" name="mobnum" required>
                 <span>Mobile Number</span>
              </div>
              <div class="inputBox w100">
-                <textarea name="" required></textarea>
+                <textarea name="textarea" required></textarea>
                 <span>Write Your Feedback Here</span>
              </div>
              <div class="inputBox w50">
                 <input type="submit" value="submit" style="font-weight: bold;">
              </div>
             </div>
-
+            </form>
         </div>
       </div>
     </section>
