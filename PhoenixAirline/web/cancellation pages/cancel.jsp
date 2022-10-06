@@ -214,27 +214,45 @@ section::before{
               </div>
           </div>
           <div class="col-6 form">
+              
+                 <%
+                        String msg= request.getParameter("msg");
+
+                             if("valid".equals(msg)){
+                        %>         <h3>Successfully Updated</h3>
+                        <%
+                             }
+
+                             if("invalid".equals(msg)){
+                     %>        <h3>Some thing Went Wrong! Try Again !</h3>
+                     <%
+                     }
+                        %>   
+              
+              
             <div class="contactForm">
                 <div class="formBox">
+                    <form action="cancellationActionPage.jsp" method="">
                  <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="fname" required>
                     <span>First Name</span>
                  </div>
                  <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="lname" required>
                     <span>Last Name</span>
                  </div>
                  <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="reff" required>
                     <span>Booking Refference</span>
                  </div>
                  <div class="inputBox w50">
-                    <input type="text" name="" required>
+                    <input type="text" name="reason" required>
                     <span>Reason</span>
                  </div>
                  <div class="inputBox w50">
-                    <input type="submit" value="submit" style="font-weight: bold;">
+                    <input type="submit" value="Cancellation Request" style="font-weight: bold;">
                  </div>
+                </form>
                 </div>
     
             </div>

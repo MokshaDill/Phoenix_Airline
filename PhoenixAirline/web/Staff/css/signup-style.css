@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.fullscreen-container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../Assests/staffimg.jpg);
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.heading h1 {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.75rem;
+  text-align: center;
+}
+
+.heading span {
+  color: #FF5252;
+  font-size: 4rem;
+}
+
+.form-container {
+  background: #212121;
+  padding: 50px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-group label {
+  font-size: .9rem;
+  letter-spacing: 1px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  padding: 7px;
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  box-shadow: 0 0 0 3px #FF5252;
+}
+
+button {
+  padding: 10px;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  background: #FF5252;
+  color: white;
+  cursor: pointer;
+}
+
+button:focus,
+button:hover {
+  background: hsl(0, 100%, 76%);
+}
+
+@media (max-width: 700px){
+  .container {
+    flex-direction: column;
+    gap: 25px;
+  }
+}
+
+.backgroundimage{
+    
+    background-size: cover;
+}
+
+.font5{
+    font-family: 'Alkalami', serif;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Noto Sans Mono', monospace;
+}
+  
+
+
+
+
+
+
+
