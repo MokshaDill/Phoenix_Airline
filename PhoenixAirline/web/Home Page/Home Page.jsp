@@ -7,15 +7,15 @@
         <meta name="author" content="" />
         <title>Creative - Start Bootstrap Theme</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="https://pbs.twimg.com/profile_images/681142196406501376/9rkUVlxM_400x400.jpg" />
+        <link rel="icon" type="image/x-icon" href="assets/logo1.png" />
         <!-- Bootstrap Icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;700&display=swap" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Dancing+Script&family=Noto+Sans+Mono:wght@700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Alkalami&family=Dancing+Script&family=Noto+Sans+Mono:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
         <!-- SimpleLightbox plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
@@ -23,31 +23,78 @@
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css">
         
-        <style>
-             
 
-        </style>
+        <style>
+.dropbtn {
+  background-color: #e12222;
+  color: white;
+/*  padding: 16px;
+  font-size: 16px;
+  border: none;*/
+border-radius: 20%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #d43a3282;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(6, 6, 6);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+        
     </head>
 
-
+ 
     <body id="page-top">
 
 
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <img src="https://pbs.twimg.com/profile_images/681142196406501376/9rkUVlxM_400x400.jpg" style="height:50px; width: 100px;"/>
+                <img src="assets/pheonix.png" style="height:70px; width: 70px;"/>
                 <a class="navbar-brand" href="#page-top">Phoenix Airline</a>
             
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Cancellation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Home Page.jsp">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../booking form/book.jsp">Travel Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../experience/experience.jsp">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Stay/stay.jsp">Stay</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about us/about.jsp">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact1/Contact.jsp"> Contact</a></li>
+                        
+                        <li><div class="dropdown" style="">
+                                <button onclick="myFunction()" class="dropbtn">Login</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="../userlogin page/userlogin.jsp">User</a>
+                                    <a href="../Staff/stafflogin.jsp">Staff</a>
+                                    <a href="../Admin/login.jsp">Admin</a>
+                                </div>
+                              </div></li>
                         
                     </ul>
                 </div>
@@ -60,7 +107,7 @@
 			<div class="video-container">
 				<video src="assets/Plane.mp4" autoplay muted loop></video>
 			</div>
-			<div class="contentnew1 " style="border: solid rgba(252, 56, 67, 120);">
+			<div class="contentnew1 " ">
 				<div style="text-align:left;">
                     <h1 class="font1 big">Life Is Short</h1>
 				<h3 class="font2 big2">And The World Is Wide</h3>
@@ -103,7 +150,7 @@
 <!--                                <input type="text" name="from" >-->
                                 <select name="from" class="form-control" placeholder="City or Airport">
                                     <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Åland Islands">Åland Islands</option>
+                                    <option value="ï¿½land Islands">ï¿½land Islands</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
                                     <option value="American Samoa">American Samoa</option>
@@ -351,7 +398,7 @@
 <!--       <input type="text" name="to" class="form-control" placeholder="City or Airport">-->
                                 <select name="to" class="form-control" placeholder="City or Airport">
                                     <option value="Afghanistan">Afghanistan</option>
-                                    <option value="Åland Islands">Åland Islands</option>
+                                    <option value="ï¿½land Islands">ï¿½land Islands</option>
                                     <option value="Albania">Albania</option>
                                     <option value="Algeria">Algeria</option>
                                     <option value="American Samoa">American Samoa</option>
@@ -848,7 +895,7 @@
                         <div class="col-xl-4 col-lg-4 mb-50">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/16934/pig-clipart-xl.png" class="img-fluid" alt="logo"></a>
+                                    <a href="index.html"><img src="assets/logo1.png" class="img-fluid" alt="logo"></a>
                                 </div>
                                 <div class="footer-text">
                                     <p>Shaka boom</p>
@@ -925,7 +972,27 @@
         <!--END Footer-->
 
 
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>

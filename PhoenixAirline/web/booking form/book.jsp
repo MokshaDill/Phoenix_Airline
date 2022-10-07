@@ -108,26 +108,48 @@
     
  <div class="wrapper">  
     <div class="container">
-        <form class="form-group" action="bookingServlet" method="POST">
+        
+        
+        <form class="form-group" action="bookingActionPage.jsp" method="">
+            
+            <center>
+                <%
+                String msg= request.getParameter("msg");
+
+                     if("valid".equals(msg)){
+                         %>         <h3 style="color: red">Successfully Updated</h3>
+                <%
+                     }
+
+                     if("invalid".equals(msg)){
+             %>        <h3 style="color: red">Some thing Went Wrong! Try Again !</h3>
+             <%
+             }
+                %>
+            </center>
+            
             <h1 class="text-center">Airline Booking Form</h1>
 
+            
+            
             <div id="form">
                 <h3 class="text-white">Booking Details</h3>
                 
+               
                 <div id="input">       
-                <input type="text" id="input-group" placeholder="From">
-                <input type="text" id="input-group" placeholder="To">
-                <input type="text" id="input-group" placeholder="Departure Date">
-                <input type="text" id="input-group" placeholder="Departure Time">
+                    <input type="text" id="input-group" name="from" placeholder="From">
+                    <input type="text" id="input-group" name="to" placeholder="To">
+                    <input type="text" id="input-group" name="depdate" placeholder="Departure Date">
+                    <input type="text" id="input-group" name="deptime" placeholder="Departure Time">
                 
-                <select  id="input-group" style="background: black;">
+                    <select name="airline"  id="input-group" style="background: black;">
                     
                     <option value="">Preffered Airline</option>
                     <option value="">Srilankan Airline</option>
                     <option value="">AirIndia</option>
                     <option value="">SpaceJet</option>
                 </select>
-                <select  id="input-group" style="background: black;">
+                    <select name="class" id="input-group" style="background: black;">
                     <option value="">Preffered Seating</option>
                     <option value="">Economy Class</option>
                     <option value="">Business Class</option>
@@ -138,23 +160,23 @@
                 <div id="input2">
                     <td>
                       
-                    <input type="number" id="input-group" placeholder="Adult">
-                    <input type="number" id="input-group" placeholder="Children(2-11years)">
-                    <input type="number" id="input-group" placeholder="infant(under 2years)">
+                        <input name="adult" type="number" id="input-group" placeholder="Adult">
+                        <input name="children" type="number" id="input-group" placeholder="Children(2-11years)">
+                        <input name="kids" type="number" id="input-group" placeholder="infant(under 2years)">
                 </div>
 
                 <div id="input3">
                     <span id="input-group" class="text-primary">Select Your Fare</span> 
                     <input type="radio" id="input-group" name="r">
                     <label class="text-white" for="input-group">One Way</label>
-                    <input type="radio" id="input-group" name="r">
+                    <input type="radio" id="input-group" value="A" name="radio">
                     <label class="text-white" for="input-group">Round Trip</label>
                 </div>
 
                 <div id="input4">
-                    <input type="text" id="input-group" placeholder="Return Date">
-                    <input type="text" id="input-group" placeholder="Return time">
-                    <input type="text" id="input-group1" placeholder="Any Message">
+                    <input name="rdate" type="text" id="input-group" placeholder="Return Date">
+                    <input name="rtime" type="text" id="input-group" placeholder="Return time">
+                    <input name="message" type="text" id="input-group1" placeholder="Any Message">
                 </div>
 
                 <div id="input5">
@@ -162,9 +184,9 @@
                 </div>
 
                 <div id="input6">
-                    <input type="text" id="input-group" placeholder="Full Nmae">
-                    <input type="number" id="input-group" placeholder="Phone Number">
-                    <input type="email" id="input-group1" placeholder="Email">
+                    <input name="fname" type="text" id="input-group" placeholder="Full Nmae">
+                    <input name="pnum" type="number" id="input-group" placeholder="Phone Number">
+                    <input name="email" type="email" id="input-group1" placeholder="Email">
                 </div>
                 <button type="submit" class="btn btn-warning text-white">Submit Form</button>
                 <button type="reset" class="btn btn-primary">Clear Form</button>
