@@ -19,7 +19,7 @@ String classtype = request.getParameter("class");
             
             
               // 4.data retrieveing
-            String qry="SELECT * FROM flight WHERE flight_name='"+from+"' and mpilot_name='"+to+"' and t_depart='"+depart+"' and t_depart='"+ret+"' and   class='"+classtype+"' ";
+            String qry="SELECT * FROM flight WHERE t_depart='"+from+"' and mpilot_name='"+to+"' and t_depart='"+depart+"' and t_depart='"+ret+"' and   class1='"+classtype+"' ";
             //where flyingfrom="+from+" and flyingto="+to+" and class="+classtype+" 
                   
             ResultSet rs = st.executeQuery(qry);
@@ -331,6 +331,44 @@ font-family: 'Dancing Script', cursive;
     font-size: 200%;
     color: #5bc8db;
     }
+    .dropbtn {
+  background-color: #e12222;
+  color: white;
+/*  padding: 16px;
+  font-size: 16px;
+  border: none;*/
+border-radius: 20%;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #d43a3282;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: rgb(6, 6, 6);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
 
         </style>
         
@@ -338,26 +376,36 @@ font-family: 'Dancing Script', cursive;
 
     <body>
 
+        <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <img src="https://pbs.twimg.com/profile_images/681142196406501376/9rkUVlxM_400x400.jpg" style="height:50px; width: 100px;"/>
+                <img src="assets/logo1.png" style="height:70px; width: 70px;"/>
                 <a class="navbar-brand" href="#page-top">Phoenix Airline</a>
             
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Cancellation</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact"> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Home Page.jsp">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../ticket/travel.jsp">Travel Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../experience/experience.jsp">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Stay/stay.jsp">Stay</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about us/about.jsp">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../contact1/Contact.jsp"> Contact</a></li>
+                        
+                        <li><div class="dropdown" style="">
+                                <button onclick="myFunction()" class="dropbtn">Login</button>
+                                <div id="myDropdown" class="dropdown-content">
+                                    <a href="../userlogin page/userlogin.jsp">User</a>
+                                    <a href="../Staff/stafflogin.jsp">Staff</a>
+                                    <a href="../Admin/login.jsp">Admin</a>
+                                </div>
+                              </div></li>
                         
                     </ul>
                 </div>
             </div>
         </nav>
-        
+        <!-- END Navigation-->
         
         <!--First section-->
            <div style="background-image: url(assets/img/flight.jpg); background-size: cover; height:480px; padding-top:80px;">
@@ -465,7 +513,7 @@ font-family: 'Dancing Script', cursive;
                         <div class="col-xl-4 col-lg-4 mb-50">
                             <div class="footer-widget">
                                 <div class="footer-logo">
-                                    <a href="index.html"><img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/16934/pig-clipart-xl.png" class="img-fluid" alt="logo"></a>
+                                    <a href="index.html"><img src="assets/logo1.png" class="img-fluid" alt="logo"></a>
                                 </div>
                                 <div class="footer-text">
                                     <p>Shaka boom</p>
@@ -485,15 +533,15 @@ font-family: 'Dancing Script', cursive;
                                 </div>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">services</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Expert Team</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Latest News</a></li>
+                                    <li><a href="../">Travel Us</a></li>
+                                    <li><a href="../experience/experience.jsp">Experience</a></li>
+                                    <li><a href="../Stay/stay.jsp">Stay</a></li>
+                                    <li><a href="../about us/about.jsp">About</a></li>
+                                    <li><a href="../Admin/login.jsp">Admin Page</a></li>
+                                    <li><a href="../userlogin page/userlogin.jsp">User Page</a></li>
+                                    <li><a href="../Staff/stafflogin.jsp">Staff Page</a></li>
+                                    <li><a href="../cancellation pages/cancel.jsp">Cancellation</a></li>
+                                    <li><a href="../vaccination form/vaccination.jsp">Vaccination</a></li>
                                 </ul>
                             </div>
                         </div>

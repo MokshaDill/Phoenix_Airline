@@ -63,6 +63,126 @@ border-radius: 20%;
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  margin: 24px 0;
+  line-height: 2;
+}
+
+.wrapper {
+  padding: 32px;
+}
+
+.cookie-container {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: #2f3640;
+  color: #f5f6fa;
+  padding: 0 32px;
+  box-shadow: 0 -2px 16px rgba(47, 54, 64, 0.39);
+
+  transition: 400ms;
+}
+
+.cookie-container.active {
+  bottom: 0;
+}
+
+.cookie-container a {
+  color: #f5f6fa;
+}
+
+.cookie-btn {
+  background: #e84118;
+  border: 0;
+  color: #f5f6fa;
+  padding: 12px 48px;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 50px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: rgba(221, 221, 221, 0.014);
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #1af5fd;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: rgb(41, 201, 237);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
 </style>
         
     </head>
@@ -118,6 +238,30 @@ border-radius: 20%;
 		</section>
          <!-- END Masthead-->
         <!-- About-->
+        
+        <button class="open-button" onclick="openForm()"><img src="assets/chatbot.png" style="width: 50px; height: 50px"/></button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
         
         <section class="page-section bookingimage"  style="border: 2px solid rgba(241, 0, 0, 0);">
@@ -180,6 +324,7 @@ border-radius: 20%;
                                     <option value="Botswana">Botswana</option>
                                     <option value="Bouvet Island">Bouvet Island</option>
                                     <option value="Brazil">Brazil</option>
+                                    <option value="Dubai">Dubai</option>
                                     <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
                                     <option value="Brunei Darussalam">Brunei Darussalam</option>
                                     <option value="Bulgaria">Bulgaria</option>
@@ -353,7 +498,7 @@ border-radius: 20%;
                                     <option value="South Africa">South Africa</option>
                                     <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
                                     <option value="Spain">Spain</option>
-                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sri Lanka">Srilanka</option>
                                     <option value="Sudan">Sudan</option>
                                     <option value="Suriname">Suriname</option>
                                     <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
@@ -416,6 +561,7 @@ border-radius: 20%;
                                     <option value="Bahamas">Bahamas</option>
                                     <option value="Bahrain">Bahrain</option>
                                     <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Dubai">Dubai</option>
                                     <option value="Barbados">Barbados</option>
                                     <option value="Belarus">Belarus</option>
                                     <option value="Belgium">Belgium</option>
@@ -601,7 +747,7 @@ border-radius: 20%;
                                     <option value="South Africa">South Africa</option>
                                     <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
                                     <option value="Spain">Spain</option>
-                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sri Lanka">Srilanka</option>
                                     <option value="Sudan">Sudan</option>
                                     <option value="Suriname">Suriname</option>
                                     <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
@@ -667,7 +813,7 @@ border-radius: 20%;
                                 <div class="input-grp">		
                                 <label>Travel Class</label>
                                 <select class="custom-select" name="class">
-                                <option value="ec">Economy Class</option>
+                                <option value="second">economy class</option>
                                 <option value="bc">Buisness Class</option>
                                 </select>
                                 </div>
@@ -697,7 +843,7 @@ border-radius: 20%;
             <div class="container px-4 px-lg-8 text-center">
                 <div style="">
                     <br><br><br><br><br><br><br> 
-                    <p style="color: black">Pheonix airline has been awarded the highest attainable for health and safety cetification in COVID-19  safety measures by airline passenger experience association (APEX) and simpliFlying Helath safety audit.</p>
+                    <p style="color: black">Pheonix airline has been awarded the highest attainable for health and safety cetification in COVID-19  safety measures by airline passenger experience association (APEX) and simpliFlying Helathï¿½safetyï¿½audit.</p>
                     <a class="btn btn-primary btn-xl" href="../vaccination form/vaccination.jsp" style="background-color: black">Check Covid-19 entry requirements</a>
                 </div>
         </section>
@@ -772,21 +918,21 @@ border-radius: 20%;
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Special offers</h3>
-                            <p class="text-muted mb-0">Save on flights, hotels , cruises, vacation packages and more.</p>
+                            <p class="text-muted mb-0">Save on flights, hotels , cruises, vacation packagesï¿½andï¿½more.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">News letters</h3>
-                            <p class="text-muted mb-0">Join for free and get our tailored newsletters full of hot travel details.</p>
+                            <p class="text-muted mb-0">Join for free and get our tailored newsletters full of hot travelï¿½details.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
                             <h3 class="h4 mb-2">Travel tips & news</h3>
-                            <p class="text-muted mb-0">Tips , news and entertainment from our travel expert to make your next trip even better</p>
+                            <p class="text-muted mb-0">Tips , news and entertainment from our travel expert to make your next tripï¿½evenï¿½better</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
@@ -824,37 +970,37 @@ border-radius: 20%;
                       <div class="content">
                         <h2>2022</h2>
                         <p>Phoenix Airlines is happy to provide its services to customers who can travel under the relevant country's travel advisories in light of the relaxation of some travel restrictions between some countries.
-Simply enter the dates you want to go as well as your preferred origin and destination to see what flights are available for your needs.</p>
+Simply enter the dates you want to go as well as your preferred origin and destination to see what flights are availableï¿½forï¿½yourï¿½needs.</p>
                       </div>
                     </div>
                     <div class="timecontainer right">
                       <div class="content">
                         <h2>2021</h2>
-                        <p>In contrast to the prior year, commercial aircraft orders decreased by almost 55% in 2020, but the number of aircraft deliveries that were postponed climbed fivefold. Although orders increased in 2018, they were still 10% below their levels in 2019. In comparison to the previous two years, there were also twice as many deferrals.</p>
+                        <p>In contrast to the prior year, commercial aircraft orders decreased by almost 55% in 2020, but the number of aircraft deliveries that were postponed climbed fivefold. Although orders increased in 2018, they were still 10% below their levels in 2019. In comparison to the previous two years, there were also twice asï¿½manyï¿½deferrals.</p>
                       </div>
                     </div>
                     <div class="timecontainer left">
                       <div class="content">
                         <h2>2020</h2>
-                        <p>In contrast to the previous year, commercial aircraft orders increased by almost 60% in 2019, but the number of deferred aircraft deliveries fell fivefold. Although orders increased in 2018, they were still more than 10% below their levels in 2019. Compared to the previous two years, deferrals also doubled.</p>
+                        <p>In contrast to the previous year, commercial aircraft orders increased by almost 60% in 2019, but the number of deferred aircraft deliveries fell fivefold. Although orders increased in 2018, they were still more than 10% below their levels in 2019. Compared to the previous two years, deferralsï¿½alsoï¿½doubled.</p>
                       </div>
                     </div>
                     <div class="timecontainer right">
                       <div class="content">
                         <h2>2019</h2>
-                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 45% in 2018, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still more than 10% below their levels in 2020. Compared to the previous two years, deferrals also doubled.</p>
+                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 45% in 2018, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still more than 10% below their levels in 2020. Compared to the previous two years, deferralsï¿½alsoï¿½doubled.</p>
                       </div>
                     </div>
                     <div class="timecontainer left">
                       <div class="content">
                         <h2>2018</h2>
-                        <p>In contrast to the previous year, commercial aircraft orders fell by almost 80% in 2017, but the number of deferred aircraft deliveries rose fourfold. Although orders increased in 2018, they were still more than 20% below their levels in 2020. Compared to the previous two years, deferrals also tripled.</p>
+                        <p>In contrast to the previous year, commercial aircraft orders fell by almost 80% in 2017, but the number of deferred aircraft deliveries rose fourfold. Although orders increased in 2018, they were still more than 20% below their levels in 2020. Compared to the previous two years, deferralsï¿½alsoï¿½tripled.</p>
                       </div>
                     </div>
                     <div class="timecontainer right">
                       <div class="content">
                         <h2>2017</h2>
-                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 65% in 2016, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still 11.5% below their levels in 2020. Compared to the previous two years, deferrals also tripled.</p>
+                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 65% in 2016, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still 11.5% below their levels in 2020. Compared to the previous two years, deferralsï¿½alsoï¿½tripled.</p>
                       </div>
                     </div>
                   </div>
@@ -984,6 +1130,36 @@ Simply enter the dates you want to go as well as your preferred origin and desti
         </footer>
         <!--END Footer-->
 
+        
+        <div class="cookie-container">
+      <p>
+        We use cookies in this website to give you the best experience on our
+        site and show you relevant ads. To find out more, read our
+        <a href="#">privacy policy</a> and <a href="#">cookie policy</a>.
+      </p>
+
+      <button class="cookie-btn">
+        Okay
+      </button>
+    </div>
+        
+        
+        <script>
+            const cookieContainer = document.querySelector(".cookie-container");
+            const cookieButton = document.querySelector(".cookie-btn");
+
+            cookieButton.addEventListener("click", () => {
+              cookieContainer.classList.remove("active");
+              localStorage.setItem("cookieBannerDisplayed", "true");
+            });
+
+            setTimeout(() => {
+              if (!localStorage.getItem("cookieBannerDisplayed")) {
+                cookieContainer.classList.add("active");
+              }
+            }, 2000);
+        </script>
+        
 
 <script>
 /* When the user clicks on the button, 

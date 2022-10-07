@@ -28,7 +28,8 @@
     <div class="content">
         <h3 data-aos="fade-up" data-aos-delay="300">Where are you staying?</h3>
         <p data-aos="fade-up" data-aos-delay="450">Our latest travel tips,expert hacks and industry insights to help make your journey one to remember</p>
-        <a data-aos="fade-up" data-aos-delay="600" href="../ticket/travel.jsp" class="btn">Travel Us</a>
+        <a data-aos="fade-up" data-aos-delay="600" href="../Package/package.jsp" class="btn">Tour Packages</a><br>
+        <a data-aos="fade-up" data-aos-delay="600" href="../Insurance/Insurance.jsp" class="btn">Insurance</a>
     </div>
 
 </section>
