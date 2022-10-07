@@ -54,6 +54,7 @@
                             </div>
                             
                             <input type="submit" value="submit" />
+                            <center><a href="staffsignup.jsp" ><input type="button" value="SignUp"/></a></center>
                         </form>
           
         </div>

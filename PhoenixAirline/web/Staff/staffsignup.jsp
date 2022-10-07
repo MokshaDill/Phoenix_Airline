@@ -59,6 +59,7 @@
                             </div>
                             
                             <input type="submit" value="submit" />
+                            <center><a href="stafflogin.jsp" ><input type="button" value="Login"/></a></center>
                         </form>
           
         </div>

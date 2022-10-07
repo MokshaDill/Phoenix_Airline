@@ -103,9 +103,14 @@
     background: transparent;
     color:#fff
 }
+
+.back{
+    background-image:url(booking.jpg);
+    background-size: cover;
+}
 </style>
-<body>
-    
+<body class="back">
+    <br><br><br>
  <div class="wrapper">  
     <div class="container">
         
@@ -128,7 +133,7 @@
                 %>
             </center>
             
-            <h1 class="text-center">Airline Booking Form</h1>
+            <h1 class="text-center"><b>Airline Booking Form</b></h1>
 
             
             

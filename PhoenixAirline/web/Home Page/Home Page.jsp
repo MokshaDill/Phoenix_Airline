@@ -81,7 +81,7 @@ border-radius: 20%;
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="Home Page.jsp">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../booking form/book.jsp">Travel Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../ticket/travel.jsp">Travel Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="../experience/experience.jsp">Experience</a></li>
                         <li class="nav-item"><a class="nav-link" href="../Stay/stay.jsp">Stay</a></li>
                         <li class="nav-item"><a class="nav-link" href="../about us/about.jsp">About</a></li>
@@ -692,7 +692,15 @@ border-radius: 20%;
             </center>
         </section>
         <!-- Services-->
-
+        
+        <section class="page-section2 bg-dark text-white" style="background-image: url(assets/covid.jpg);background-size: cover; height: 50%;">
+            <div class="container px-4 px-lg-8 text-center">
+                <div style="">
+                    <br><br><br><br><br><br><br> 
+                    <p style="color: black">Pheonix airline has been awarded the highest attainable for health and safety cetification in COVID-19  safety measures by airline passenger experience association (APEX) and simpliFlying Helath safety audit.</p>
+                    <a class="btn btn-primary btn-xl" href="../vaccination form/vaccination.jsp" style="background-color: black">Check Covid-19 entry requirements</a>
+                </div>
+        </section>
 
         <!-- Start popular-destination Area -->
 			<section class="page-section bg-light" id="area">
@@ -703,7 +711,7 @@ border-radius: 20%;
 		                        <h1 class="mb-10">Popular Destinations</h1>
                                 <hr class="divider divider" />
 		                        <p>We all live in an age that belongs to the young at heart. Life that is becoming extremely fast, day.</p>
-                                <a class="btn btn-primary btn-xl" href="#area">Get Started!</a>
+                                
 		                    </div>
 		                </div>
 		            </div>						
@@ -763,35 +771,39 @@ border-radius: 20%;
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Sturdy Themes</h3>
-                            <p class="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
+                            <h3 class="h4 mb-2">Special offers</h3>
+                            <p class="text-muted mb-0">Save on flights, hotels , cruises, vacation packages and more.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Up to Date</h3>
-                            <p class="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
+                            <h3 class="h4 mb-2">News letters</h3>
+                            <p class="text-muted mb-0">Join for free and get our tailored newsletters full of hot travel details.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Ready to Publish</h3>
-                            <p class="text-muted mb-0">You can use this design as is, or you can make changes!</p>
+                            <h3 class="h4 mb-2">Travel tips & news</h3>
+                            <p class="text-muted mb-0">Tips , news and entertainment from our travel expert to make your next trip even better</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
                             <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-                            <h3 class="h4 mb-2">Made with Love</h3>
-                            <p class="text-muted mb-0">Is it really open source if it's not made with love?</p>
+                            <h3 class="h4 mb-2">Travel with us</h3>
+                            <p class="text-muted mb-0">Let your dreams take FLIGHT!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Portfolio-->
+        
+        
+        
+        
 
         <!-- Call to action-->
         <section class="page-section2 bg-dark text-white">
@@ -810,38 +822,39 @@ border-radius: 20%;
                 <div class="timeline" style="border: solid rgba(0, 128, 0, 0);">
                     <div class="timecontainer left">
                       <div class="content">
+                        <h2>2022</h2>
+                        <p>Phoenix Airlines is happy to provide its services to customers who can travel under the relevant country's travel advisories in light of the relaxation of some travel restrictions between some countries.
+Simply enter the dates you want to go as well as your preferred origin and destination to see what flights are available for your needs.</p>
+                      </div>
+                    </div>
+                    <div class="timecontainer right">
+                      <div class="content">
+                        <h2>2021</h2>
+                        <p>In contrast to the prior year, commercial aircraft orders decreased by almost 55% in 2020, but the number of aircraft deliveries that were postponed climbed fivefold. Although orders increased in 2018, they were still 10% below their levels in 2019. In comparison to the previous two years, there were also twice as many deferrals.</p>
+                      </div>
+                    </div>
+                    <div class="timecontainer left">
+                      <div class="content">
+                        <h2>2020</h2>
+                        <p>In contrast to the previous year, commercial aircraft orders increased by almost 60% in 2019, but the number of deferred aircraft deliveries fell fivefold. Although orders increased in 2018, they were still more than 10% below their levels in 2019. Compared to the previous two years, deferrals also doubled.</p>
+                      </div>
+                    </div>
+                    <div class="timecontainer right">
+                      <div class="content">
+                        <h2>2019</h2>
+                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 45% in 2018, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still more than 10% below their levels in 2020. Compared to the previous two years, deferrals also doubled.</p>
+                      </div>
+                    </div>
+                    <div class="timecontainer left">
+                      <div class="content">
+                        <h2>2018</h2>
+                        <p>In contrast to the previous year, commercial aircraft orders fell by almost 80% in 2017, but the number of deferred aircraft deliveries rose fourfold. Although orders increased in 2018, they were still more than 20% below their levels in 2020. Compared to the previous two years, deferrals also tripled.</p>
+                      </div>
+                    </div>
+                    <div class="timecontainer right">
+                      <div class="content">
                         <h2>2017</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                      </div>
-                    </div>
-                    <div class="timecontainer right">
-                      <div class="content">
-                        <h2>2016</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                      </div>
-                    </div>
-                    <div class="timecontainer left">
-                      <div class="content">
-                        <h2>2015</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                      </div>
-                    </div>
-                    <div class="timecontainer right">
-                      <div class="content">
-                        <h2>2012</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                      </div>
-                    </div>
-                    <div class="timecontainer left">
-                      <div class="content">
-                        <h2>2011</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
-                      </div>
-                    </div>
-                    <div class="timecontainer right">
-                      <div class="content">
-                        <h2>2007</h2>
-                        <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
+                        <p>In contrast to the previous year, commercial aircraft orders decreased by about 65% in 2016, but the number of deferred aircraft deliveries increased fourfold. Although orders increased in 2018, they were still 11.5% below their levels in 2020. Compared to the previous two years, deferrals also tripled.</p>
                       </div>
                     </div>
                   </div>
@@ -915,15 +928,15 @@ border-radius: 20%;
                                 </div>
                                 <ul>
                                     <li><a href="#">Home</a></li>
-                                    <li><a href="#">about</a></li>
-                                    <li><a href="#">services</a></li>
-                                    <li><a href="#">portfolio</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <li><a href="#">About us</a></li>
-                                    <li><a href="#">Our Services</a></li>
-                                    <li><a href="#">Expert Team</a></li>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Latest News</a></li>
+                                    <li><a href="../">Travel Us</a></li>
+                                    <li><a href="../experience/experience.jsp">Experience</a></li>
+                                    <li><a href="../Stay/stay.jsp">Stay</a></li>
+                                    <li><a href="../about us/about.jsp">About</a></li>
+                                    <li><a href="../Admin/login.jsp">Admin Page</a></li>
+                                    <li><a href="../userlogin page/userlogin.jsp">User Page</a></li>
+                                    <li><a href="../Staff/stafflogin.jsp">Staff Page</a></li>
+                                    <li><a href="../cancellation pages/cancel.jsp">Cancellation</a></li>
+                                    <li><a href="../vaccination form/vaccination.jsp">Vaccination</a></li>
                                 </ul>
                             </div>
                         </div>

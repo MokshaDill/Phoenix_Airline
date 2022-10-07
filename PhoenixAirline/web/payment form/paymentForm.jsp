@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,13 +6,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
-<div class="wrapper">
+<body style="background-image: url(background1.jpg)">
+    <div class="wrapper">
  <h2>Payment Form</h2>
  <div class="row">
    <div class="col-75">
      <div class="container">
-         <form action="PaymentOne" method="POST">
+         
+         
+         <form action="paymentFormActionPage.jsp" method="POST">
+             
+             <%
+                            String msg= request.getParameter("msg");
+
+                                    if("valid".equals(msg)){
+                                        %>         <h3 style="color: crimson">**Successfully Updated**</h3>
+                                                   <br>
+                                        <%
+                                    }
+
+                                    if("invalid".equals(msg)){
+                            %>        <h3 style="color: crimson">Some thing Went Wrong! Try Again!!!</h3>
+                                       <br>
+                            <%
+                            }
+                        %> 
       
         <div class="row">
           <div class="col-50">
